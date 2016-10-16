@@ -30,7 +30,7 @@ def get_mp3list(directory):
 	return(mp3List)
 	
 def get_musicinfo(filename):
-	subprocess.run(["./MusicBricksIDMTTranscriber -i " + filename + " -o " + filename +"--bass --xml"], shell=True,)
+	subprocess.run(["./MusicBricksIDMTTranscriber -i " + filename + " -o " + filename +" --bass --xml"], shell=True,)
 
 def get_playlist_tracks(username, playlist_id):
 	results = sp.user_playlist_tracks(username, playlist_id)
@@ -41,17 +41,27 @@ def get_playlist_tracks(username, playlist_id):
 	return tracks
 	
 def get_bpm_field(musicinfoxml):
+	""" Creates a field of 4/4 and checks the bpm """
 	print(musicinfoxml)
 	musicinfo = converter.readXML(musicinfoxml)
 	beatfield = musicinfo["beats"] 
 	bpmfield = {}
-	i=0
-	while i < math.floor(len(beatfield)/4):
-		print(beatfield[i*4]["onset"])
-		current_bpm = beatfield[(i)*4+3]["onset"] - beatfield[i*4]["onset"]
-		print(current_bpm)
-		i = i+1
 	concat_beatfield={}
+	i=0
+	last_bpm=0
+	startpos=0
+	endpos=0
+	while i < math.floor(len(beatfield)/4):
+		current_bpm = round(60/(beatfield[(i)*4+3]["onset"] - beatfield[i*4]["onset"])*4)
+		if i > 0 and abs(last_bpm - current_bpm) > 5:
+			concat_beatfield[last_bpm] = str(startpos) + " - " + str(beatfield[i*4-1]["onset"])
+			startpos = beatfield[i*4]["onset"]
+		last_bpm=current_bpm
+		print(current_bpm)
+		endpos = beatfield[(i)*4+3]["onset"]
+		i = i+1
+	concat_beatfield[last_bpm] = str(startpos) + " - " + str(endpos)
+	print(concat_beatfield)
 	return concat_beatfield
 
 
