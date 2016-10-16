@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<song artist="unknown" title="unknown" key="7" mode="1">
+    <Transcribed_Tracks>
+        <Bass flavour="2" instrument="0">
+            <note start="0.064" midi="52" freq="164.814" duration="1.132" />
+            <note start="1.225" midi="55" freq="195.998" duration="0.18" />
+            <note start="2.119" midi="46" freq="116.541" duration="1.149" />
+            <note start="3.268" midi="53" freq="174.614" duration="0.9" />
+            <note start="4.168" midi="53" freq="174.614" duration="0.697" />
+            <note start="4.865" midi="53" freq="174.614" duration="0.662" />
+            <note start="5.526" midi="43" freq="97.9989" duration="0.737" />
+            <note start="6.264" midi="53" freq="174.614" duration="0.76" />
+            <note start="7.024" midi="52" freq="164.814" duration="0.099" />
+            <note start="7.123" midi="52" freq="164.814" duration="0.168" />
+            <note start="7.291" midi="50" freq="146.832" duration="0.284" />
+            <note start="7.576" midi="50" freq="146.832" duration="1.173" />
+            <note start="8.748" midi="36" freq="65.4064" duration="0.76" />
+            <note start="9.555" midi="52" freq="164.814" duration="1.678" />
+            <note start="11.233" midi="50" freq="146.832" duration="1.155" />
+            <note start="12.388" midi="48" freq="130.813" duration="1.097" />
+            <note start="13.572" midi="50" freq="146.832" duration="2.635" />
+            <note start="16.208" midi="40" freq="82.4069" duration="1.242" />
+            <note start="17.45" midi="50" freq="146.832" duration="2.897" />
+            <note start="20.346" midi="49" freq="138.591" duration="1.254" />
+            <note start="21.6" midi="53" freq="174.614" duration="1.324" />
+            <note start="22.965" midi="50" freq="146.832" duration="3.628" />
+            <note start="26.778" midi="54" freq="184.997" duration="2.705" />
+        </Bass>
+    </Transcribed_Tracks>
+    <BeatGrid bpm="90.4545">
+        <beat onset="0.279" numerator="4" denominator="4" index="1" />
+        <beat onset="0.94" numerator="4" denominator="4" index="2" />
+        <beat onset="1.591" numerator="4" denominator="4" index="3" />
+        <beat onset="2.252" numerator="4" denominator="4" index="4" />
+        <beat onset="2.914" numerator="4" denominator="4" index="1" />
+        <beat onset="3.576" numerator="4" denominator="4" index="2" />
+        <beat onset="4.238" numerator="4" denominator="4" index="3" />
+        <beat onset="4.911" numerator="4" denominator="4" index="4" />
+        <beat onset="5.573" numerator="4" denominator="4" index="1" />
+        <beat onset="6.246" numerator="4" denominator="4" index="2" />
+        <beat onset="6.92" numerator="4" denominator="4" index="3" />
+        <beat onset="7.593" numerator="4" denominator="4" index="4" />
+        <beat onset="8.278" numerator="4" denominator="4" index="1" />
+        <beat onset="8.963" numerator="4" denominator="4" index="2" />
+        <beat onset="9.636" numerator="4" denominator="4" index="3" />
+        <beat onset="10.31" numerator="4" denominator="4" index="4" />
+        <beat onset="10.983" numerator="4" denominator="4" index="1" />
+        <beat onset="11.645" numerator="4" denominator="4" index="2" />
+        <beat onset="12.295" numerator="4" denominator="4" index="3" />
+        <beat onset="12.945" numerator="4" denominator="4" index="4" />
+        <beat onset="13.595" numerator="4" denominator="4" index="1" />
+        <beat onset="14.245" numerator="4" denominator="4" index="2" />
+        <beat onset="14.896" numerator="4" denominator="4" index="3" />
+        <beat onset="15.557" numerator="4" denominator="4" index="4" />
+        <beat onset="16.219" numerator="4" denominator="4" index="1" />
+        <beat onset="16.881" numerator="4" denominator="4" index="2" />
+        <beat onset="17.543" numerator="4" denominator="4" index="3" />
+        <beat onset="18.204" numerator="4" denominator="4" index="4" />
+        <beat onset="18.878" numerator="4" denominator="4" index="1" />
+        <beat onset="19.551" numerator="4" denominator="4" index="2" />
+        <beat onset="20.225" numerator="4" denominator="4" index="3" />
+        <beat onset="20.898" numerator="4" denominator="4" index="4" />
+        <beat onset="21.571" numerator="4" denominator="4" index="1" />
+        <beat onset="22.256" numerator="4" denominator="4" index="2" />
+        <beat onset="22.941" numerator="4" denominator="4" index="3" />
+        <beat onset="23.626" numerator="4" denominator="4" index="4" />
+        <beat onset="24.311" numerator="4" denominator="4" index="1" />
+        <beat onset="24.985" numerator="4" denominator="4" index="2" />
+        <beat onset="25.646" numerator="4" denominator="4" index="3" />
+        <beat onset="26.297" numerator="4" denominator="4" index="4" />
+        <beat onset="26.947" numerator="4" denominator="4" index="1" />
+        <beat onset="27.574" numerator="4" denominator="4" index="2" />
+        <beat onset="28.189" numerator="4" denominator="4" index="3" />
+        <beat onset="28.828" numerator="4" denominator="4" index="4" />
+        <beat onset="29.466" numerator="1" denominator="4" index="1" />
+        <beat onset="30.128" numerator="1" denominator="4" index="2" />
+    </BeatGrid>
+    <Harmonies />
+</song>

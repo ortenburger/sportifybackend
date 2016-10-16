@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+""" author: Casey Chu -- bitsofpancake
+modified: Alexander Ortenburger 
+"""
 
 import argparse 
 import codecs
@@ -14,7 +17,6 @@ import urllib.request
 import webbrowser
 
 class SpotifyAPI:
-	
 	# Requires an OAuth token.
 	def __init__(self, auth):
 		self._auth = auth

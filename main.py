@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""Author: Alexander Ortenburger
+"""
+
 import os
 import sys
 import subprocess
@@ -57,7 +60,6 @@ def get_bpm_field(musicinfoxml):
 			concat_beatfield[last_bpm] = str(startpos) + " - " + str(beatfield[i*4-1]["onset"])
 			startpos = beatfield[i*4]["onset"]
 		last_bpm=current_bpm
-		print(current_bpm)
 		endpos = beatfield[(i)*4+3]["onset"]
 		i = i+1
 	concat_beatfield[last_bpm] = str(startpos) + " - " + str(endpos)
@@ -75,8 +77,8 @@ if __name__ == '__main__':
 		outdata["playlist"]=data[i]["name"]
 		j = 0 #track number
 		tracks = []
-		while j <= 1: #for devel only
-		#while j <= len(data[i]["tracks"])-1:
+		#while j <= 1: #for devel only
+		while j <= len(data[i]["tracks"])-1:
 			track = {	"id": j, 
 						"uri": data[i]["tracks"][j]["track"]["uri"],
 						"artist": data[i]["tracks"][j]["track"]["artists"][0]["name"],
@@ -87,7 +89,7 @@ if __name__ == '__main__':
 			subprocess.run(["wget " + data[i]["tracks"][j]["track"]["preview_url"] + " -O download/%s.mp3" %j], shell=True)
 			get_musicinfo("download/%s.mp3" %j)
 			
-			track["bpm-position"] = get_bpm_field("download/%s.mp3.xml" %j)
+			track["bpm-positions"] = get_bpm_field("download/%s.mp3.xml" %j)
 			tracks.append(track)
 			j = j+1
 		outdata["songs"] = tracks
